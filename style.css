@@ -1,0 +1,246 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0 auto;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.far {
+    font-size: 17px;
+}
+
+.fas {
+    font-size: 17px;
+    color: #AF7EEB;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #E3E9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .todo-list {
+    width: 25%;
+    height: 80%;
+}
+
+.container .todo-list .title {
+    width: 100%;
+    height: 10%;
+    background-color: #AF7EEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .todo-list .title p {
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.container .todo-list .list-wrapper {
+    width: 100%;
+    height: 80%;
+    margin-top: 35px;
+}
+
+.container .todo-list .list-wrapper .list {
+    width: 100%;
+    height: 80%;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+    overflow: auto;
+}
+
+.container .todo-list .list-wrapper .list ul {
+    margin: 0px 30px 50px 30px;
+}
+
+.container .todo-list .list-wrapper .list ul li {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    justify-content: space-between;
+    color: #8B98B8;
+}
+
+.container .todo-list .list-wrapper .list ul li div {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.container .todo-list .list-wrapper .list ul li div:hover {
+    cursor: pointer;
+    color:  rgb(163, 87, 255);
+}
+
+.container .todo-list .list-wrapper .list ul li .content {
+    flex-grow: 1;
+    margin: 0px 10px 2px 10px;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.container .todo-list .list-wrapper .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+.container .todo-list .list-wrapper .button .add {
+    width: 35%;
+    height: 100%;
+    background-color: #AF7EEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50%;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.container .todo-list .list-wrapper .button .add:hover {
+    cursor: pointer;
+    background-color: rgb(163, 87, 255);
+}
+
+/* width */
+#scroll-bar-styling::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+#scroll-bar-styling::-webkit-scrollbar-track {
+    background: #FFFFFF; 
+}
+   
+  /* Handle */
+#scroll-bar-styling::-webkit-scrollbar-thumb {
+    background: #AF7EEB; 
+    border-radius: 5px;
+}
+  
+  /* Handle on hover */
+#scroll-bar-styling::-webkit-scrollbar-thumb:hover {
+    background: rgb(163, 87, 255); 
+}
+
+.overlay { 
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    opacity: 0;
+} 
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+#pop-up {
+    display: flex;
+    align-items: center;
+}
+
+.popup {
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-size: 35px;
+    color: #AF7EEB;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    transition: all 200ms;
+    font-size: 15px;
+    text-decoration: none;
+    color: #AF7EEB;
+}
+
+.popup .close:hover {
+    color: rgb(163, 87, 255);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+input[type="text"] {
+    width: 70%;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(163, 87, 255);
+    border-bottom: 2px solid hsl(267, 73%, 71%);
+    padding-bottom: 5px;
+}
+
+input[type="text"]:focus {
+    outline-style: none;
+    border-bottom: 2px solid rgb(163, 87, 255);
+}
+
+input[type="text"]::placeholder {
+    color: #AF7EEB;
+    font-style: italic;
+    opacity: 0.3;
+}
+
+input[type="button"] {
+    border: none;
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color:  rgb(163, 87, 255);
+    background-color: #FFFFFF;
+    border: 2px solid rgb(163, 87, 255);
+    border-radius: 30px;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color:  rgb(163, 87, 255);
+}
