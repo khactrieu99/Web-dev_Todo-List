@@ -8,7 +8,7 @@
     <!-- link to style sheet -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="./css/all.min.css"> -->
 
 </head>
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="button">
-                    <a class="add" href="#pop-up">+ New Task</a>
+                    <a id="new-task" class="add" href="#pop-up">+ New Task</a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
             <div class="popup">
                 <a id="close" class="close" href="#">close</a>
                 <form>
-                    <input type="text" placeholder="Give me task!!" id="task">
+                    <input type="text" placeholder="Enter some tasks" id="task">
                     <input type="button" value="Add" id="add-task">
                 </form>
             </div>
@@ -44,6 +44,6 @@
     </div>
 
     <!-- script -->
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

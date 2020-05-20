@@ -233,14 +233,20 @@ input[type="button"] {
     height: 40px;
     font-size: 15px;
     font-weight: bold;
-    color:  rgb(163, 87, 255);
+    color:  #AF7EEB;
     background-color: #FFFFFF;
-    border: 2px solid rgb(163, 87, 255);
+    border: 2px solid #AF7EEB;
     border-radius: 30px;
 }
 
 input[type="button"]:hover {
     cursor: pointer;
     color: #FFFFFF;
-    background-color:  rgb(163, 87, 255);
+    background-color: #AF7EEB;
+}
+
+input[type="button"]:focus {
+    outline-style: none;
+    color: #FFFFFF;
+    background-color: rgb(163, 87, 255);
 }
